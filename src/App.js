@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import { HashRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Dashboard from './Components/Dashboard';
 import PageNotFound from './Components/PageNotFound';
 import Login from './Login/Login';
@@ -14,7 +14,7 @@ import Reports from './Components/Reports';
 function App() { 
   return (
     <div className="App">
-      <HashRouter>
+      <BrowserRouter>
       <Routes>
         <Route path='/' element={<Login />} />
         <Route path='/' element={<BaseLayout />}>
@@ -27,8 +27,8 @@ function App() {
         </Route>
         <Route path='*' element={<PageNotFound />} />
       </Routes>
-      </HashRouter>
-      
+      </BrowserRouter>
+
     </div>
   );
 }
