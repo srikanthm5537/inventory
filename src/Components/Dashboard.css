@@ -1,0 +1,141 @@
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.dashboard-card {
+  background: #ffffff;
+  border-radius: 1.5rem;
+  padding: 1.5rem;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 12px 25px rgba(15, 23, 42, 0.08);
+}
+
+.dashboard-card-title {
+  font-size: 0.95rem;
+  color: #64748b;
+  margin-bottom: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.dashboard-card-value {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.dashboard-section {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 1.5rem;
+}
+
+.chart-card,
+.table-card,
+.activity-card {
+  background: #ffffff;
+  border-radius: 1.5rem;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 12px 25px rgba(15, 23, 42, 0.08);
+  padding: 1.75rem;
+}
+
+.chart-card h2,
+.table-card h2,
+.activity-card h2 {
+  margin: 0 0 1rem;
+  font-size: 1.25rem;
+  color: #0f172a;
+}
+
+.chart-wrapper {
+  min-height: 18rem;
+}
+
+.low-stock-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.low-stock-table th,
+.low-stock-table td {
+  text-align: left;
+  padding: 0.95rem 0.75rem;
+  color: #334155;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.low-stock-table th {
+  color: #65748b;
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.low-stock-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.status-low,
+.status-medium,
+.status-high {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.35rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.status-low {
+  background: #fef3c7;
+  color: #b45309;
+}
+
+.status-medium {
+  background: #dbeafe;
+  color: #3730a3;
+}
+
+.status-high {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.activity-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.activity-item {
+  background: #f8fafc;
+  padding: 1rem;
+  border-radius: 1rem;
+  border: 1px solid #e2e8f0;
+}
+
+.activity-item p {
+  margin: 0;
+  color: #334155;
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
+.activity-item span {
+  display: block;
+  margin-top: 0.5rem;
+  color: #64748b;
+  font-size: 0.85rem;
+}
+
+@media (max-width: 1024px) {
+  .dashboard-grid,
+  .dashboard-section {
+    grid-template-columns: 1fr;
+  }
+}

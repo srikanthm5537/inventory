@@ -1,0 +1,57 @@
+.page-not-found {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  background: radial-gradient(circle at top left, #dbeafe 0%, #eff6ff 45%, #ffffff 100%);
+}
+
+.page-not-found-card {
+  max-width: 36rem;
+  width: 100%;
+  text-align: center;
+  padding: 3rem 2rem;
+  border-radius: 2rem;
+  background: #ffffff;
+  border: 1px solid rgba(148, 163, 184, 0.24);
+  box-shadow: 0 20px 60px rgba(15, 23, 42, 0.12);
+}
+
+.page-not-found-code {
+  font-size: 5rem;
+  font-weight: 900;
+  color: #2563eb;
+  margin: 0;
+  line-height: 1;
+}
+
+.page-not-found-title {
+  font-size: 2.2rem;
+  margin: 1rem 0 0.5rem;
+  color: #0f172a;
+}
+
+.page-not-found-text {
+  margin: 0 0 1.75rem;
+  color: #475569;
+  font-size: 1rem;
+  line-height: 1.75;
+}
+
+.page-not-found-link {
+  display: inline-block;
+  padding: 0.9rem 1.8rem;
+  border-radius: 9999px;
+  background: #2563eb;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+  box-shadow: 0 16px 30px rgba(37, 99, 235, 0.16);
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.page-not-found-link:hover {
+  background: #1d4ed8;
+  transform: translateY(-1px);
+}
