@@ -242,7 +242,7 @@ function ItemMaster() {
             </label>
           </div>
         </div>
-
+<section className="masters-table-panel">
         <table className="item-master-table">
           <thead>
             <tr>
@@ -292,6 +292,7 @@ function ItemMaster() {
             ))}
           </tbody>
         </table>
+        </section>
 
         <div className="pagination-controls">
           <button type="button" onClick={() => setPage((prev) => Math.max(prev - 1, 1))} disabled={page === 1}>
