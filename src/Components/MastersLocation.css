@@ -191,3 +191,36 @@
     grid-template-columns: 1fr;
   }
 }
+
+/* Mobile tweaks for very small screens */
+@media (max-width: 480px) {
+  .masters-table-panel {
+    padding: 0.75rem;
+  }
+
+  .masters-table th,
+  .masters-table td {
+    padding: 0.6rem 0.5rem;
+    font-size: 0.95rem;
+  }
+
+  /* Hide less important columns to improve layout: Type and Stock */
+  .masters-table th:nth-child(3),
+  .masters-table td:nth-child(3),
+  .masters-table th:nth-child(4),
+  .masters-table td:nth-child(4) {
+    display: none;
+  }
+
+  /* Stack action buttons for easier tapping */
+  .masters-table td > .button-secondary,
+  .masters-table td > .button-danger {
+    display: block;
+    width: 100%;
+    margin: 0.45rem 0 0 0;
+  }
+
+  .masters-table thead th {
+    font-size: 0.82rem;
+  }
+}

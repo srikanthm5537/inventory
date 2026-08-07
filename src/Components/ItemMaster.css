@@ -299,3 +299,40 @@
     grid-template-columns: 1fr;
   }
 }
+
+/* Mobile-specific tweaks for very small screens */
+@media (max-width: 480px) {
+  .item-master-card {
+    padding: 0.75rem;
+  }
+
+  .item-master-table th,
+  .item-master-table td {
+    padding: 0.6rem 0.5rem;
+    font-size: 0.95rem;
+  }
+
+  /* Hide less important columns: Category and Unit to save space */
+  .item-master-table th:nth-child(3),
+  .item-master-table td:nth-child(3),
+  .item-master-table th:nth-child(4),
+  .item-master-table td:nth-child(4) {
+    display: none;
+  }
+
+  /* Stack action buttons for easier tapping */
+  .item-master-table td > .button-secondary,
+  .item-master-table td > .button-danger {
+    display: block;
+    width: 100%;
+    margin: 0.45rem 0 0 0;
+  }
+
+  .item-master-table thead th {
+    font-size: 0.82rem;
+  }
+
+  .item-master-header {
+    gap: 0.5rem;
+  }
+}

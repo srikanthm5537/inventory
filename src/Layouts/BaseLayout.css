@@ -95,3 +95,84 @@
   line-height: 1.8;
   color: #334155;
 }
+
+/* Mobile / responsive controls */
+.sidebar-close {
+  display: none;
+  position: absolute;
+  top: 0.5rem;
+  right: 0.75rem;
+  background: transparent;
+  border: none;
+  color: #fff;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.mobile-topbar {
+  display: none;
+  align-items: center;
+  gap: 1rem;
+  padding-bottom: 1rem;
+}
+
+.mobile-menu-btn {
+  background: #2563eb;
+  color: #fff;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.5rem 0.75rem;
+  font-size: 1.1rem;
+}
+
+.mobile-title {
+  font-weight: 700;
+  color: #0f172a;
+}
+
+@media (max-width: 900px) {
+  .sidebar {
+    position: fixed;
+    left: -100%;
+    top: 0;
+    height: 100vh;
+    width: 72%;
+    max-width: 320px;
+    z-index: 60;
+    transition: left 0.22s ease;
+    box-shadow: 6px 0 24px rgba(2,6,23,0.25);
+  }
+
+  .sidebar.open {
+    left: 0;
+  }
+
+  .sidebar-close {
+    display: block;
+  }
+
+  .mobile-topbar {
+    display: flex;
+  }
+
+  .content-area {
+    padding: 1rem;
+  }
+
+  /* overlay when sidebar open */
+  .sidebar.open + .content-area::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.35);
+    z-index: 50;
+  }
+}
+
+/* explicit overlay element used to capture taps and close sidebar */
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.35);
+  z-index: 50;
+}
