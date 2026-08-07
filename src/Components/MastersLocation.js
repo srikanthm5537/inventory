@@ -408,7 +408,7 @@ function MastersLocation() {
                     />
                   </div>
                 </>
-              )}
+              )} 
             </div>
             <div className="masters-modal-actions">
               <button
