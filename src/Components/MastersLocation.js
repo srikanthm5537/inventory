@@ -247,7 +247,7 @@ function MastersLocation() {
                           type="button"
                           className="button-danger"
                           onClick={() => handleDeactivateLocation(location)}
-                          disabled={!location.active || location.stock > 0}
+                          disabled={!location.active}
                           style={{ marginLeft: '0.5rem' }}
                         >
                           Deactivate
