@@ -25,7 +25,7 @@
     "tailwindcss": "^4.3.3",
     "web-vitals": "^2.1.4"
   },
-  "homepage": "https://srikanthm5537.github.io/inventory",
+  "homepage": ".",
   "scripts": {
     "predeploy":"npm run build",
     "deploy":"gh-pages -d build",
