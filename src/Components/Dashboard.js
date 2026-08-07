@@ -27,26 +27,34 @@ function Dashboard() {
         <div>
           <h1>Dashboard</h1>
         </div>
+        <div>
+          <h2 className="status-live">Live Status</h2>
+        </div>
       </div>
 
       <div className="dashboard-grid">
         <div className="dashboard-card">
-          <p className="dashboard-card-title">Total Items</p>
-          <p className="dashboard-card-value">1,248</p>
+          <p className="dashboard-card-title">Total Active SKUS</p>
+          <p className="dashboard-card-value">142</p>
         </div>
         <div className="dashboard-card">
-          <p className="dashboard-card-title">Stock Movement</p>
-          <p className="dashboard-card-value">+22%</p>
+          <p className="dashboard-card-title">Total Stock Vakue</p>
+          <p className="dashboard-card-value">1,84,500</p>
         </div>
         <div className="dashboard-card">
-          <p className="dashboard-card-title">Low Stock Items</p>
-          <p className="dashboard-card-value">12</p>
+          <p className="dashboard-card-title">AT / Below Reorder Level</p>
+          <span className="dashboard-card-value" style={{color:"#b45309"}}>4</span>
+            <span className="action-required">Action Required</span>
+        </div>
+        <div className="dashboard-card">
+          <p className="dashboard-card-title">Transactions Today</p>
+          <p className="dashboard-card-value">28</p>
         </div>
       </div>
 
       <div className="dashboard-section">
         <div className="chart-card">
-          <h2>Movement Chart</h2>
+          <h2>Inward vs Outward Movement (Last 14 Days)</h2>
           <div className="chart-wrapper">
             <ResponsiveContainer width="100%" height={280}>
               <AreaChart data={movementData} margin={{ top: 10, right: 20, left: 0, bottom: 0 }}>
@@ -86,14 +94,14 @@ function Dashboard() {
 
       <div className="dashboard-section">
         <div className="table-card custm-table-card">
-          <h2>Low-Stock Table</h2>
+          <h2>Low-Stock Severity Alert</h2>
           <table className="low-stock-table">
             <thead>
               <tr>
-                <th>Item</th>
-                <th>Stock</th>
-                <th>Reorder Level</th>
-                <th>Status</th>
+                <th>SKU/Item</th>
+                <th>Current</th>
+                <th>Reorder</th>
+                <th>Severity</th>
               </tr>
             </thead>
             <tbody>
@@ -124,3 +132,4 @@ function Dashboard() {
 }
 
 export default Dashboard;
+
