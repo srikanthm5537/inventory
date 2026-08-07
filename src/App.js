@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router-dom';
 import Dashboard from './Components/Dashboard';
 import PageNotFound from './Components/PageNotFound';
 import Login from './Login/Login';
@@ -14,20 +14,20 @@ import Reports from './Components/Reports';
 function App() { 
   return (
     <div className="App">
-      <BrowserRouter>
+      <HashRouter>
       <Routes>
-        <Route path='*' element={<PageNotFound />} />
         <Route path='/' element={<Login />} />
-        <Route path="/" element={<BaseLayout />}>
-        <Route path='/dashboard' element={<Dashboard />} />
-        <Route path='/itemmaster' element={<ItemMaster />} />
-        <Route path='/masterslocation' element={<MastersLocation />} />
-        <Route path='/transaction' element={<NewTransaction />} />
-        <Route path='/stockledger' element={<StockLedger />} />
-         <Route path='/report' element={<Reports />} />
+        <Route path='/' element={<BaseLayout />}>
+          <Route path='dashboard' element={<Dashboard />} />
+          <Route path='itemmaster' element={<ItemMaster />} />
+          <Route path='masterslocation' element={<MastersLocation />} />
+          <Route path='transaction' element={<NewTransaction />} />
+          <Route path='stockledger' element={<StockLedger />} />
+          <Route path='report' element={<Reports />} />
         </Route>
+        <Route path='*' element={<PageNotFound />} />
       </Routes>
-      </BrowserRouter>
+      </HashRouter>
     </div>
   );
 }
