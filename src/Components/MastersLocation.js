@@ -194,7 +194,7 @@ function MastersLocation() {
               type="button"
               className={`button-secondary ${activeTab === 'locations' ? 'active-tab' : ''}`}
               onClick={() => setActiveTab('locations')}
-            >
+            style={{marginRight:"8px",marginBottom:"4px"}}>
               Locations ({locationCount})
             </button>
             <button
