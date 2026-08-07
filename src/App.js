@@ -28,6 +28,7 @@ function App() {
         <Route path='*' element={<PageNotFound />} />
       </Routes>
       </HashRouter>
+      
     </div>
   );
 }
