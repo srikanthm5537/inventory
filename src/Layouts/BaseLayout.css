@@ -113,7 +113,17 @@
   display: none;
   align-items: center;
   gap: 1rem;
-  padding-bottom: 1rem;
+  padding: 0.5rem 0 0.85rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: linear-gradient(180deg, rgba(247,251,255,0.98) 0%, rgba(247,251,255,0.9) 100%);
+  backdrop-filter: blur(4px);
+  box-shadow: 0 6px 18px rgba(2,6,23,0.06);
+}
+
+.mobile-topbar.hidden {
+  display: none;
 }
 
 .mobile-menu-btn {
@@ -123,6 +133,7 @@
   border-radius: 0.5rem;
   padding: 0.5rem 0.75rem;
   font-size: 1.1rem;
+  margin-left:10px;
 }
 
 .mobile-title {

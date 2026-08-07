@@ -22,7 +22,7 @@ function BaseLayout() {
       {sidebarOpen && <div className="overlay" onClick={() => setSidebarOpen(false)} />}
 
       <main className="content-area">
-        <header className="mobile-topbar">
+        <header className={`mobile-topbar ${sidebarOpen ? 'hidden' : ''}`}>
           <button className="mobile-menu-btn" onClick={() => setSidebarOpen(true)} aria-label="Open menu">☰</button>
           <div className="mobile-title">Inventory App</div>
         </header>
