@@ -184,7 +184,7 @@ function ItemMaster() {
       <div className="content-header">
         <div>
           <h1>Item Master</h1>
-          <p>Use SKU-based item management, search, filters, CSV import, and soft-deactivation.</p>
+          {/* <p>Use SKU-based item management, search, filters, CSV import, and soft-deactivation.</p> */}
         </div>
       </div>
 

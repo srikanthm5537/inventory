@@ -177,7 +177,7 @@ function MastersLocation() {
       <div className="content-header">
         <div>
           <h1>Masters Location</h1>
-          <p>Manage storage locations and suppliers with dummy backend simulation.</p>
+          {/* <p>Manage storage locations and suppliers with dummy backend simulation.</p> */}
         </div>
       </div>
 

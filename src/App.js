@@ -11,7 +11,7 @@ import NewTransaction from './Components/NewTransaction';
 import StockLedger from './Components/StockLedger';
 import Reports from './Components/Reports';
 
-function App() {
+function App() { 
   return (
     <div className="App">
       <BrowserRouter>
