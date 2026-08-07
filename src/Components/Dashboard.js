@@ -85,7 +85,7 @@ function Dashboard() {
       </div>
 
       <div className="dashboard-section">
-        <div className="table-card">
+        <div className="table-card custm-table-card">
           <h2>Low-Stock Table</h2>
           <table className="low-stock-table">
             <thead>
