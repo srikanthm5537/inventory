@@ -168,3 +168,6 @@
   }
 }
 
+.custm-table-card{
+  overflow-x: auto;
+}
